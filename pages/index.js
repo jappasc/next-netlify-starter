@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <header>
-        {selectedOption != null && selectedOption === options.MARICONASO && (
+        {selectedOption != null && selectedOption !== options.MARICONASO && (
           <div className="finish-buttons">
             <button
               className="button"

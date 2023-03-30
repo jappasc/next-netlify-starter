@@ -27,7 +27,7 @@ code {
 }
 
 .container {
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,13 +35,18 @@ code {
 }
 
 .button {
+  background-color: aquamarine;
+  border-color: blue;
   border-radius: 34px;
   box-sizing: border-box;
   cursor: pointer;
+  font-style: normal;
+  font-size: medium;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 10px;
   max-width: 500px;
-  min-width: 130px;
+  min-width: 200px;
+  min-height: 30px;
   position: relative;
   text-align: center;
-  background-color: aquamarine;
-  border-color: blue;
 }

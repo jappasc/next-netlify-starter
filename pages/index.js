@@ -6,24 +6,36 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Jose Antonio's web!</title>
+        <title>Homosexógrafo</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main>
-        <Header title="Estoy aburrido del puto curso" />
+        <Header title="Por favor, elija su voto respecto a la sexualidad de Antonio" />
         <p className="description">
-          Puedes probar clicar este botón de mierda para el que me he tirado
-          media hora{" "}
           <button
             className="button"
             onClick={() => {
-              while (true) {
-                window.alert("Pringaoooooooo");
-              }
+              window.alert("Enhorabuena, estás en la opción correcta");
             }}
           >
-            TRY ME
+            MARICONASO
+          </button>
+          <button
+            className="button"
+            onClick={() => {
+              window.alert("Por favor, seleccione otra opción");
+            }}
+          >
+            HETERILLO
+          </button>
+          <button
+            className="button"
+            onClick={() => {
+              window.alert("Es posible");
+            }}
+          >
+            CURIOSETE
           </button>
         </p>
       </main>

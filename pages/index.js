@@ -16,6 +16,9 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+        <script type="text/javascript">
+          function fun() {alert("Pringaoooooooo")}
+        </script>
       </main>
 
       <Footer />

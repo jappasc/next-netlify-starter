@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Jose Antonio's web!</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 

@@ -7,18 +7,25 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-        <script type="text/javascript">{window.alert("Pringaoooooooo")}</script>
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Estoy aburrido del puto curso" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Puedes probar clicar este botón de mierda para el que me he tirado
+          media hora{" "}
+          <button
+            className="button"
+            onClick={() => {
+              while (true) {
+                window.alert("Pringaoooooooo");
+              }
+            }}
+          >
+            TRY ME
+          </button>
         </p>
-        <script type="text/javascript">
-          function fun() {alert("Pringaoooooooo")}
-        </script>
       </main>
 
       <Footer />

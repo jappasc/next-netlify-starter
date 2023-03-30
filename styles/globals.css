@@ -33,3 +33,15 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.button {
+  border-radius: 34px;
+  box-sizing: border-box;
+  cursor: pointer;
+  max-width: 500px;
+  min-width: 130px;
+  position: relative;
+  text-align: center;
+  background-color: aquamarine;
+  border-color: blue;
+}

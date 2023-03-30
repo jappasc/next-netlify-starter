@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
-        <script type="text/javascript">{alert("Pringaoooooooo")}</script>
+        <script type="text/javascript">{window.alert("Pringaoooooooo")}</script>
       </Head>
 
       <main>

@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <header>
-        {selectedOption != null && (
+        {selectedOption != null && selectedOption === options.MARICONASO && (
           <div className="finish-buttons">
             <button
               className="button"
@@ -36,7 +36,9 @@ export default function Home() {
       </header>
       <div className="container">
         <main>
-          <Header title="Por favor, elija su voto respecto a la sexualidad de Antonio" />
+          {selectedOption == null && (
+            <Header title="Por favor, elija su voto respecto a la sexualidad de Antonio" />
+          )}
           <p className="description">
             {selectedOption == null && (
               <div>

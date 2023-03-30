@@ -20,8 +20,8 @@ export default function Home() {
       </Head>
 
       <header>
-        {selectedOption != null && selectedOption !== options.MARICONASO && (
-          <div className="finish-buttons">
+        <div className="finish-buttons">
+          {selectedOption != null && selectedOption !== options.MARICONASO && (
             <button
               className="button"
               onClick={() => {
@@ -30,9 +30,11 @@ export default function Home() {
             >
               Me'quivocao
             </button>
+          )}
+          {selectedOption != null && (selectedOption === options.MARICONASO || selectedOption === options.CURIOSETE) && (
             <button className="button">Notificar a Alba</button>
-          </div>
-        )}
+          )}
+        </div>
       </header>
       <div className="container">
         <main>

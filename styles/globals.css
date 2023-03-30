@@ -7,6 +7,7 @@ body {
 }
 
 * {
+  background-color: #303030;
   box-sizing: border-box;
 }
 
@@ -17,13 +18,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+  color: aliceblue;
 }
 
 .container {
@@ -36,9 +31,11 @@ code {
 
 .button {
   background-color: aquamarine;
-  border-color: blue;
+  border-color: aliceblue;
+  border-width: 6px;
   border-radius: 34px;
   box-sizing: border-box;
+  color:#303030;
   cursor: pointer;
   font-style: normal;
   font-size: medium;

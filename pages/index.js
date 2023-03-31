@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <LoginModal show/>
+      <LoginModal show={true}/>
 
       <header>
         <div className="finish-buttons">

@@ -3,6 +3,7 @@ import Header from "@components/Header";
 import Footer from "@components/Footer";
 import { useState } from "react";
 import { options } from "../constants";
+import LoginModal from "@components/login-modal";
 
 export default function Home() {
   const [showLastOption, setShowLastOption] = useState(false);
@@ -19,6 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
+      <LoginModal show/>
+
       <header>
         <div className="finish-buttons">
           {selectedOption != null && selectedOption !== options.MARICONASO && (
@@ -31,9 +34,11 @@ export default function Home() {
               Me'quivocao
             </button>
           )}
-          {selectedOption != null && (selectedOption === options.MARICONASO || selectedOption === options.CURIOSETE) && (
-            <button className="button">Notificar a Alba</button>
-          )}
+          {selectedOption != null &&
+            (selectedOption === options.MARICONASO ||
+              selectedOption === options.CURIOSETE) && (
+              <button className="button">Notificar a Alba</button>
+            )}
         </div>
       </header>
       <div className="container">
@@ -92,7 +97,6 @@ export default function Home() {
             </p>
           )}
         </main>
-
         <Footer selectedOption={selectedOption} />
       </div>
     </div>

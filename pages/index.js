@@ -8,6 +8,11 @@ import LoginModal from "@components/login-modal";
 export default function Home() {
   const [showLastOption, setShowLastOption] = useState(false);
   const [selectedOption, setselectedOption] = useState(null);
+  const [name, setName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [showLoginModal, setShowLoginModal] = useState(true);
+  const [loginHasErros, setLoginHasErros] = useState(false);
 
   function handleClick() {
     setShowLastOption(true);
@@ -20,7 +25,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <LoginModal show={true}/>
+      <LoginModal
+        show={showLoginModal}
+        name={name}
+        lastName={lastName}
+        email={email}
+        loginHasErros={loginHasErros}
+        setName={setName}
+        setLastName={setLastName}
+        setEmail={setEmail}
+        setShowLoginModal={setShowLoginModal}
+        setLoginHasErros={setLoginHasErros}
+      />
 
       <header>
         <div className="finish-buttons">
